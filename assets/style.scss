@@ -1,0 +1,123 @@
+// out: ../style.css, compress: true
+
+$primary-color: #ffffff;
+$dark-color: #dfdfdf;
+$light-color: #161616;
+
+$bg-color: #161616;
+$bg-color-dark: #181818;
+$bg-color-light: #181818;
+
+@import "spectre/spectre";
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    background: $bg-color;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding: 1.9rem;
+    z-index: 999;
+    background-color: rgba($bg-color-light, 0.94);
+}
+
+.hero {
+    text-align: center;
+
+    &.index-banner {
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .hero-body {
+            padding: 7rem;
+            background: rgba($bg-color, 0.6);
+            clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+        }
+    }
+
+    .icon {
+        height: 8rem;
+        background-image: url('icons/icon-white.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-bottom: 20px;
+    }
+}
+
+
+.index-geo .geo {
+    margin-top: 6rem;
+    position: absolute;
+    opacity: 0.4;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &.geo1 {
+        background-image: url("assets/images/geo1.svg");
+        right: 2rem;
+        top: 2rem;
+        height: 5rem;
+        width: 5rem;
+    }
+
+    &.geo2 {
+        background-image: url(assets/images/geo2.svg);
+        left: -3rem;
+        bottom: -7rem;
+        height: 12rem;
+        width: 12rem;
+    }
+
+    &.geo3 {
+        background-image: url(assets/images/geo3.svg);
+        right: -13rem;
+        top: -5rem;
+        height: 60rem;
+        width: 30rem;
+    }
+
+    &.geo4 {
+        background-image: url(assets/images/geo4.svg);
+        left: 6rem;
+        top: -10rem;
+        height: 80rem;
+        width: 80rem;
+    }
+
+    &.geo5 {
+        background-image: url(assets/images/geo5.svg);
+        left: -1rem;
+        top: -2rem;
+        height: 20rem;
+        width: 10rem;
+    }
+
+    &.geo6 {
+        background-image: url(assets/images/geo6.svg);
+        right: -2rem;
+        bottom: -2rem;
+        height: 10rem;
+        width: 10rem;
+    }
+
+    &.geo7 {
+        background-image: url(assets/images/geo7.svg);
+        left: 6rem;
+        bottom: -2rem;
+        height: 25rem;
+        width: 10rem;
+    }
+}
+
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+}
