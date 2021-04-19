@@ -57,91 +57,104 @@ body {
   }
 }
 
-.index.geo {
-  z-index: -999;
-  max-width: 100%;
-
-  * {
-    z-index: -999;
+.geo {
+  &.index {
     position: absolute;
-    opacity: 0.7;
-    background-size: contain;
-    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    z-index: -999;
     max-width: 100%;
-  }
-
-  .geo1 {
-    background-image: url(assets/images/geo1.svg);
-    background-position: top right;
-    background-size: contain;
-    right: 2rem;
-    top: 2rem;
-    height: 4.6rem;
-    width: 4.6rem;
-  }
-
-  .geo2 {
-    background-image: url(assets/images/geo2.svg);
-    left: 0rem;
-    bottom: 0rem;
-    height: 12rem;
-    width: 12rem;
-    transform: translate(-20%, 4%);
-  }
-
-  .geo3 {
-    background-image: url(assets/images/geo3.svg);
-    background-position: left center;
-    background-size: contain;
-    right: 0rem;
-    top: 0rem;
-    height: 60rem;
-    width: 30rem;
-    transform: translate(75%, 10%);
-  }
-
-  .geo4 {
-    background-image: url(assets/images/geo4.svg);
-    background-position: center center;
-    background-size: contain;
-    left: 0rem;
-    top: 0rem;
-    height: 150%;
+    height: 100vh;
     width: 100%;
-    transform: scale(1.6) translate(0%, -5%);
-  }
 
-  .geo5 {
-    background-image: url(assets/images/geo5.svg);
-    background-position: left bottom;
-    background-size: contain;
-    left: 0rem;
-    top: 0rem;
-    height: 20rem;
-    width: 18rem;
-    transform: translate(-8%, -6%);
-  }
+    &.bg {
+      position: static;
+      height: 0%;
+      width: 100%;
+    }
 
-  .geo6 {
-    background-image: url(assets/images/geo6.svg);
-    background-position: right bottom;
-    background-size: contain;
-    right: 0rem;
-    bottom: 0rem;
-    height: 8rem;
-    width: 8rem;
-    transform: translate(12%, 12%);
-  }
+    * {
+      z-index: -999;
+      position: absolute;
+      opacity: 0.7;
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-width: 100%;
+    }
 
-  .geo7 {
-    background-image: url(assets/images/geo7.svg);
-    background-position: left top;
-    background-size: contain;
-    left: 6rem;
-    bottom: 0rem;
-    height: 25rem;
-    width: 10rem;
-    transform: translate(0%, 20%);
+    .geo1 {
+      background-image: url(assets/images/geo1.svg);
+      background-position: top right;
+      background-size: contain;
+      right: 2rem;
+      top: 2rem;
+      height: 4.6rem;
+      width: 4.6rem;
+    }
+
+    .geo2 {
+      background-image: url(assets/images/geo2.svg);
+      left: 0rem;
+      bottom: 0rem;
+      height: 12rem;
+      width: 12rem;
+      transform: translate(-20%, 4%);
+    }
+
+    .geo3 {
+      background-image: url(assets/images/geo3.svg);
+      background-position: left center;
+      background-size: contain;
+      right: 0rem;
+      top: 0rem;
+      height: 60rem;
+      width: 30rem;
+      transform: translate(75%, 10%);
+    }
+
+    .geo4 {
+      background-image: url(assets/images/geo4.svg);
+      background-position: center center;
+      background-size: contain;
+      left: 0rem;
+      top: 0rem;
+      height: 150%;
+      width: 100%;
+      transform: scale(1.6) translate(0%, -5%);
+    }
+
+    .geo5 {
+      background-image: url(assets/images/geo5.svg);
+      background-position: left bottom;
+      background-size: contain;
+      left: 0rem;
+      top: 0rem;
+      height: 20rem;
+      width: 18rem;
+      transform: translate(-8%, -6%);
+    }
+
+    .geo6 {
+      background-image: url(assets/images/geo6.svg);
+      background-position: right bottom;
+      background-size: contain;
+      right: 0rem;
+      bottom: 0rem;
+      height: 8rem;
+      width: 8rem;
+      transform: translate(12%, 12%);
+    }
+
+    .geo7 {
+      background-image: url(assets/images/geo7.svg);
+      background-position: left top;
+      background-size: contain;
+      left: 6rem;
+      bottom: 0rem;
+      height: 25rem;
+      width: 10rem;
+      transform: translate(0%, 20%);
+    }
   }
 }
 
