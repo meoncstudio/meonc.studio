@@ -2,6 +2,11 @@
 
 @import "variable";
 
+html {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 @media (orientation: portrait) {
   html {
     font-size: calc(100vw / 45);
@@ -59,6 +64,7 @@ body {
 
 .index.geo {
   z-index: -999;
+  max-width: 100%;
 
   * {
     z-index: -999;
@@ -66,6 +72,7 @@ body {
     opacity: 0.7;
     background-size: contain;
     background-repeat: no-repeat;
+    max-width: 100%;
   }
 
   .geo1 {
