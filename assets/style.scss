@@ -2,8 +2,23 @@
 
 @import "variable";
 
-html {
-  font-size: 100vw / 140;
+@media (orientation: portrait) {
+  html {
+    font-size: calc(100vw / 45);
+  }
+}
+
+@media (orientation: landscape) {
+  html {
+    font-size: calc(100vh / 45);
+  }
+}
+
+// Phone
+@media (max-width: 576px) and (orientation: portrait) {
+  html {
+    font-size: calc(100vw / 30);
+  }
 }
 
 body {
@@ -45,10 +60,6 @@ body {
     align-items: center;
 
     .hero-body {
-      padding: 7rem;
-      background: rgba($bg-color, 0.6);
-      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-
       h2 {
         font-size: 1.4rem;
       }
@@ -76,59 +87,77 @@ body {
     background-repeat: no-repeat;
 
     &.geo1 {
-      background-image: url("assets/images/geo1.svg");
+      background-image: url(assets/images/geo1.svg);
+      background-position: top right;
+      background-size: contain;
       right: 2rem;
       top: 2rem;
-      height: 5rem;
-      width: 5rem;
+      height: 4.6rem;
+      width: 4.6rem;
     }
 
     &.geo2 {
       background-image: url(assets/images/geo2.svg);
-      left: -3rem;
-      bottom: -7rem;
+      left: 0rem;
+      bottom: 0rem;
       height: 12rem;
       width: 12rem;
+      transform: translate(-20%, 4%);
     }
 
     &.geo3 {
       background-image: url(assets/images/geo3.svg);
-      right: -13rem;
-      top: -5rem;
+      background-position: left center;
+      background-size: contain;
+      right: 0rem;
+      top: 0rem;
       height: 60rem;
       width: 30rem;
+      transform: translate(75%, 10%);
     }
 
     &.geo4 {
       background-image: url(assets/images/geo4.svg);
-      left: 6rem;
-      top: -10rem;
-      height: 80rem;
-      width: 80rem;
+      background-position: center center;
+      background-size: cover;
+      left: 0rem;
+      top: 0rem;
+      height: 100%;
+      width: 100%;
+      transform: scale(1.2) translate(0%, -5%);
     }
 
     &.geo5 {
       background-image: url(assets/images/geo5.svg);
-      left: -1rem;
-      top: -2rem;
+      background-position: left bottom;
+      background-size: contain;
+      left: 0rem;
+      top: 0rem;
       height: 20rem;
       width: 10rem;
+      transform: translate(-8%, -4%);
     }
 
     &.geo6 {
       background-image: url(assets/images/geo6.svg);
-      right: -2rem;
-      bottom: -2rem;
-      height: 10rem;
-      width: 10rem;
+      background-position: right bottom;
+      background-size: contain;
+      right: 0rem;
+      bottom: 0rem;
+      height: 8rem;
+      width: 8rem;
+      transform: translate(12%, 12%);
     }
 
     &.geo7 {
       background-image: url(assets/images/geo7.svg);
+      background-position: left top;
+      background-size: contain;
       left: 6rem;
-      bottom: -2rem;
+      bottom: 0rem;
       height: 25rem;
       width: 10rem;
+      transform: translate(0%, 4%);
     }
   }
 }
