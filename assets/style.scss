@@ -25,10 +25,12 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   background: $bg-color;
+
   animation-name: fadeIn;
   animation-delay: 0.2s;
-  animation-duration: 0.6s;
+  animation-duration: 2s;
   animation-fill-mode: both;
+  animation-timing-function: $bezier;
 }
 
 @keyframes fadeIn {
@@ -37,42 +39,22 @@ body {
   }
 }
 
-.navbar {
-  position: absolute;
+.index-banner {
+  background-color: rgba($bg-color-light, 0.3);
   width: 100%;
-  padding: 1.8rem 1.6rem;
-  z-index: 999;
-  background-color: rgba($bg-color-light, 0.7);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .a {
-    padding: 1.2rem;
-  }
-}
+  .content {
+    text-align: center;
 
-.hero {
-  text-align: center;
-
-  &.index-banner {
-    position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .hero-body {
-      h2 {
-        font-size: 1.4rem;
-      }
+    .icon {
+      height: 7rem;
+      width: auto;
+      margin-bottom: 1.6rem;
     }
-  }
-
-  .icon {
-    height: 8rem;
-    background-image: url("icons/icon-white.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-bottom: 20px;
   }
 }
 
