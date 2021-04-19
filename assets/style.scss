@@ -39,8 +39,7 @@ body {
   }
 }
 
-.index-banner {
-  background-color: rgba($bg-color-light, 0.3);
+.index.banner {
   width: 100%;
   height: 100%;
   display: flex;
@@ -51,15 +50,18 @@ body {
     text-align: center;
 
     .icon {
-      height: 7rem;
+      height: 8rem;
       width: auto;
       margin-bottom: 1.6rem;
     }
   }
 }
 
-.index-geo {
+.index.geo {
+  z-index: -999;
+
   * {
+    z-index: -999;
     position: absolute;
     opacity: 0.7;
     background-size: contain;
@@ -99,12 +101,12 @@ body {
   .geo4 {
     background-image: url(assets/images/geo4.svg);
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     left: 0rem;
     top: 0rem;
     height: 150%;
     width: 100%;
-    transform: scale(1.2) translate(0%, -5%);
+    transform: scale(1.6) translate(0%, -5%);
   }
 
   .geo5 {
@@ -114,8 +116,8 @@ body {
     left: 0rem;
     top: 0rem;
     height: 20rem;
-    width: 10rem;
-    transform: translate(-8%, -4%);
+    width: 18rem;
+    transform: translate(-8%, -6%);
   }
 
   .geo6 {
@@ -143,5 +145,66 @@ body {
 
 .copyright {
   text-align: center;
-  font-size: 12px;
+  font-size: 0.7rem;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: lighten($bg-color-dark, 0.8);
+}
+
+.container {
+  .h2,
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.member {
+  margin: 10rem 0rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    padding: 2rem;
+    text-align: center;
+
+    .card-header {
+      .avatar {
+        margin-bottom: 0.8rem;
+
+        &.avatar-xl {
+          $size: 4.6rem;
+          height: $size;
+          width: $size;
+        }
+      }
+    }
+  }
+}
+
+.project {
+  margin: 10rem 0rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: none;
+
+  .card {
+    overflow: hidden;
+
+    .card-image img {
+      min-height: 14rem;
+      object-fit: cover;
+    }
+  }
+}
+
+.copyright {
+  height: 6rem;
 }
