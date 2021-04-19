@@ -2,11 +2,6 @@
 
 @import "variable";
 
-html {
-  max-width: 100%;
-  overflow: hidden;
-}
-
 @media (orientation: portrait) {
   html {
     font-size: calc(100vw / 45);
